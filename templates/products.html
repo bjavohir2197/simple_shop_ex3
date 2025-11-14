@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="product-list">
+    <h2>Smartfonlar</h2>
+
+    <div class="product-card">
+        <a href="{{ url_for('product_detail') }}">
+            <img src="{{ url_for('static', filename='iphone_14.jpg') }}" alt="iPhone 14">
+        </a>
+        <h3>iPhone 14 Pro</h3>
+        <p><strong>Narxi:</strong> 13 500 000 so‘m</p>
+        <p><strong>Xarakteristikasi:</strong> 6.1" Super Retina XDR, A16 Bionic, 48MP kamera, 6GB RAM</p>
+    </div>
+
+    <div class="product-card">
+        <a href="{{ url_for('product_detail') }}">
+            <img src="{{ url_for('static', filename='samsung_S23.jpg') }}" alt="Samsung Galaxy S23">
+        </a>
+        <h3>Samsung Galaxy S23</h3>
+        <p><strong>Narxi:</strong> 11 800 000 so‘m</p>
+        <p><strong>Xarakteristikasi:</strong> 6.1" AMOLED, Snapdragon 8 Gen 2, 50MP kamera, 8GB RAM</p>
+    </div>
+
+    <div class="product-card">
+        <a href="{{ url_for('product_detail') }}">
+            <img src="{{ url_for('static', filename='xiomi_redmi.jpg') }}" alt="Xiaomi Redmi Note 13">
+        </a>
+        <h3>Xiaomi Redmi Note 13</h3>
+        <p><strong>Narxi:</strong> 4 200 000 so‘m</p>
+        <p><strong>Xarakteristikasi:</strong> 6.6" AMOLED, Dimensity 6100+, 108MP kamera, 8GB RAM</p>
+    </div>
+</section>
+
+{% endblock %}
